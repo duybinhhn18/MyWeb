@@ -1,0 +1,499 @@
+<!doctype html>
+
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/ico_home/" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/ico_home/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/ico_home/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/ico_home/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/ico_home/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/ico_home/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/ico_home/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/ico_home/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/ico_home/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/ico_home/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/ico_home/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/ico_home/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/ico_home/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/ico_home/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/ico_home/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Learn HTML</title>
+  </head>
+  <body>
+    <h4>&copy; Duy Bình</h4>
+    <hr />
+    <h3>
+      <a href="/HTML/index.html">Home <br /></a>
+      <a href="/HTML/more info/about_me.html">About me <br /></a>
+      <a href="/HTML/more info/contact.html">Contact with me <br /></a>
+      <a href="/HTML/css-page.html">Css page study</a>
+    </h3>
+    <hr />
+    <h1>Ghi chép học HTML</h1>
+
+    <hr />
+    <ul>
+      <li>Test</li>
+      <li>Test</li>
+      <li>Test</li>
+      <li>Test</li>
+      <li>Test</li>
+    </ul>
+
+    <h2>Có số thứ tự</h2>
+    <ol>
+      <li>Test</li>
+      <li>Test</li>
+      <li>Test</li>
+      <li>Test</li>
+      <li>Test</li>
+    </ol>
+
+    <hr />
+
+    <h1>ol ul chồng nhau</h1>
+    <h2><b>Ví dụ 1</b></h2>
+    <h3>Cách viết bài văn</h3>
+
+    <ol type="I">
+      <li>Mở bài: giới thiệu nhân vật trong truyện cổ tích</li>
+      <li>Thân bài: tả nhân vật trong truyện cổ tích</li>
+      <ol>
+        <li>Tả bao quát nhân vật trong truyện cổ tích</li>
+        <li>Tả chi tiết nhân vật trong truyện cổ tích</li>
+        <ol type="a">
+          <li>Tả ngoại hình của nhân vật trong truyện cổ tích</li>
+          <li>Tả tính cách của nhân vật trong truyện cổ tích</li>
+          <li>Tả hoạt động của nhân vật trong truyện cổ tích</li>
+        </ol>
+        <li>Kết bài: nêu cãm nghĩ của em về nhân vật trong truyện cổ tích</li>
+      </ol>
+    </ol>
+
+    <h2><b>Ví dụ 2</b></h2>
+    <h3>Menu item</h3>
+    <ul>
+      <li>Menu item 1</li>
+      <li>Menu item 2</li>
+      <ol type="I">
+        <li>menu item 2.1</li>
+        <li>menu item 2.2</li>
+        <ol>
+          <li>menu item 2.2.1</li>
+          <li>menu item 2.2.2</li>
+          <li>menu item 2.2.3</li>
+        </ol>
+        <li>menu item 2.3</li>
+        <li>menu item 2.4</li>
+      </ol>
+      <li>Menu item 3</li>
+      <li>Menu item 4</li>
+      <li>Menu item 5</li>
+    </ul>
+
+    <hr />
+    <h1>TÌm hiểu thẻ "a" (anchor) gắn link, sdt, mail</h1>
+    <h2><b>Ví dụ 1: Gắn link</b></h2>
+
+    <a href="">Reload trang <br /></a>
+    <a href="#">Trở về đầu trang <br /></a>
+    <a href="https://empire.edu.vn/"
+      >Link đến empire edu (mở tại trang này) <br
+    /></a>
+    <a href="https://empire.edu.vn/" target="_self"
+      >Link đến empire edu (mở tại trang này) <br
+    /></a>
+    <a href="https://empire.edu.vn/" target="_blank"
+      >Link đến empire edu (new tab)</a
+    >
+
+    <h2><b>Ví dụ 2: Trình gọi điện thoại</b></h2>
+    <a href="tel:01234567">Gọi cho tôi nhé</a>
+
+    <h2><b>Ví dụ 3: Gửi mail</b></h2>
+    <a href="mailto:duybinhhn18@gmail.com">Gửi mail cho tui nhá <br /></a>
+    <a href="mailto:duybinhhn18@gmail.com?cc=duybinhhn182@gmail.com"
+      >Gửi mail cho tui nhá (có backup) <br
+    /></a>
+    <a href="mailto:duybinhhn18@gmail.com?bcc=duybinhhn182@gmail.com"
+      >Gửi mail cho tui nhá (có backup ẩn danh) <br
+    /></a>
+    <a
+      href="mailto:duybinhhn18@gmail.com?bcc=duybinhhn182@gmail.com&subject=cứu em sốp ơi"
+      >Gửi mail cho tui nhá (có backup ẩn danh + có tiêu đề) <br
+    /></a>
+
+    <hr />
+
+    <h1>Tìm hiểu thẻ "img": chèn ảnh</h1>
+    <h2><b>1.Thêm ảnh trực tuyến</b></h2>
+    <img
+      src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kZXxlbnwwfHwwfHx8MA%3D%3D"
+      alt="Đây là ảnh về code"
+    />
+
+    <h2><b>2.Thêm ảnh cục bộ</b></h2>
+    <img src="img/tu dien.PNG" alt="Nguyên lý tụ điện" width="505" />
+
+    <h1>Bài tập</h1>
+    <h2>VỢ NỖI ĐÓA VỚI SÁNG KIẾN CỦA CHỒNG</h2>
+    <hr />
+    <img src="img/minhhoa.jpg" alt="Vợ giận chồng minh họa" />
+    <p>
+      -Lương tháng này của anh dành ra mua cái máy giặt cửa ngang nhé! <br />
+      Anh chồng càu nhàu: <br />
+      -Em cứ vẽ chuyện! <br />
+      -Chứ cái máy giặt nhà mình giặt hại quần áo lắm! - vợ giải thích <br />
+      Anh chồng nhún vai <br />
+      -Nếu em thích, anh sẽ vật ngửa cái máy giặt cửa đứng nhà mình ra, vậy là
+      nó thành cái máy giặt cửa ngang rồi. Mua bán gì cho lãng phí! <br />
+      - !!!
+    </p>
+
+    <hr />
+    <h1>HTML entities</h1>
+    <p>
+      Cách tạo tiêu đề trong html chúng ta dùng: <b>&lt;h1&gt; &lt;/h1&gt;</b>
+      <br />
+      Cú pháp: &lt;h1&gt; Nhập nội dung ở đây &lt;/h1&gt;
+    </p>
+    <hr />
+    <h1>Tìm hiểu thẻ Pre (preformatted)</h1>
+    <p>Thẻ này có tác dụng giữ nguyên định dạng văn bản đầu vào.<br /></p>
+    <pre>Ví dụ: Steve         Jobs        Việt             Nam</pre>
+    <img src="img/steve.webp" alt="Steve Jobs không phải người Việt Nam" />
+    <p>
+      Cách dùng: &lt;pre&gt; Nhập nội dung tại đây (đã định dạng)&lt;/pre&gt;
+    </p>
+    <hr />
+    <h1>Thẻ code</h1>
+    <h2>
+      Truy cập vào trang web sau để chuyển code thành entities html:
+      <a href="https://codebeautify.org/html-escape-unescape" target="_blank"
+        >Nhấn vào đây</a
+      >
+    </h2>
+    <h3>Ví dụ: Đoạn code mẫu khung của html</h3>
+    <pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Test&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    <hr />
+    <h1>Cách high light code</h1>
+    <a href="https://prismjs.com/" target="_blank">Link thư viện PrismJS</a>
+    <h2>Cách làm:</h2>
+    <h4>
+      <ol>
+        <li>
+          Chép dòng sau vào trước thẻ <code>&lt;/Head&gt;</code>:
+          <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css&quot;&gt;
+</code></pre>
+        </li>
+        <li>
+          Thêm đoạn
+          <code class="language-html">class = "language-html"</code> vào trong
+          thẻ ta muốn highlight
+          <p>
+            Ví dụ:
+            <code class="language-html"
+              >&lt;code class = "language-html"&gt;&lt;/code&gt;</code
+            >
+          </p>
+        </li>
+        <li>
+          Thêm đoạn code sau vào trước thẻ <code>&lt;/body&gt;</code>:
+          <pre><code class= "language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+        </li>
+      </ol>
+    </h4>
+    <h2>Ví dụ:</h2>
+    <pre><code class = "language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Test&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <hr />
+    <h1>Tìm hiểu về HTML TABLE</h1>
+    <h2>Các thẻ quan trọng</h2>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Thẻ</th>
+        <th>Ý nghĩa</th>
+        <th>Chi tiết</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>tr</td>
+          <td>Table row</td>
+          <td>Đại diện cho <b>một hàng</b> trong bảng html</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>td</td>
+          <td>Table data</td>
+          <td>Định nghĩa <b>một ô dữ liệu</b> trong bảng</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>th</td>
+          <td>Table head</td>
+          <td>Định nghĩa <b>một ô tiêu đề</b> trong bảng</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>thead</td>
+          <td>Table header</td>
+          <td>
+            Định nghĩa phần đầu của bảng.
+            <b>Thường chứa các ô tiêu đề ("th") của các cột trong hàng</b>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>tbody</td>
+          <td>Table body</td>
+          <td>
+            Định nghĩa phần thân của bảng.
+            <b>Thường chứa các thẻ "tr" và các ô dữ liệu "td" tương úng.</b>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>tfoot</td>
+          <td>Table Footer</td>
+          <td>
+            Định nghĩa phần cuối của bảng.
+            <b
+              >Thường chứa các ô chú thích, tổng kết, hoặc thông tin cuối cùng
+              về bảng</b
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Code mẫu</h2>
+    <pre><code class = "language-html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tên sản phẩm&lt;/th&gt;
+      &lt;th&gt;Giá tiền&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Áo phông&lt;/td&gt;
+      &lt;td&gt;300k&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Quần jean&lt;/td&gt;
+      &lt;td&gt;500k&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Thành tiền&lt;/td&gt;
+      &lt;td&gt;800K&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+    <h2>Kết quả</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá tiền</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Áo phông</td>
+          <td>300k</td>
+        </tr>
+        <tr>
+          <td>Quần jean</td>
+          <td>500k</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Thành tiền</td>
+          <td>800K</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <h1>Thẻ Colspan & Rowspan</h1>
+    <h2>Ý nghĩa các thẻ</h2>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Attribute</th>
+        <th>Chi tiết</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Colspan</td>
+          <td>Chỉ định phần tử chiếm bao nhiêu cột</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rowspan</td>
+          <td>Chỉ định phần tử chiếm bao nhiêu hàng</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Code mẫu</h2>
+    <pre><code class= "language-html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;th&gt;Tên sản phẩm&lt;/th&gt;
+    &lt;th colspan=&quot;2&quot;&gt;Mô tả&lt;/th&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td rowspan=&quot;2&quot;&gt;Áo phông&lt;/td&gt;
+      &lt;td&gt;Chất liệu&lt;/td&gt;
+      &lt;td&gt;Bạt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Kích thước&lt;/td&gt;
+      &lt;td&gt;M, L, XL&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Quần jean&lt;/td&gt;
+      &lt;td colspan=&quot;2&quot;&gt;Quần jean cao cấp, dễ dàng phối đồ&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+    <h2>Kết quả</h2>
+    <table>
+      <thead>
+        <th>Tên sản phẩm</th>
+        <th colspan="2">Mô tả</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Áo phông</td>
+          <td>Chất liệu</td>
+          <td>Bạt</td>
+        </tr>
+        <tr>
+          <td>Kích thước</td>
+          <td>M, L, XL</td>
+        </tr>
+        <tr>
+          <td>Quần jean</td>
+          <td colspan="2">Quần jean cao cấp, dễ dàng phối đồ</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h1>Các thuộc tính cơ bản của CSS</h1>
+    <h3>
+      Truy cập trang web sau để tra cứu thông tin:
+      <a href="https://www.w3schools.com/cssref/index.php">Click here</a>
+    </h3>
+    <h2>Code mẫu một vài thuộc tính cơ bản (trong file .css)</h2>
+    <pre><code class = "language-html">h1 {
+  /* Màu chữ */
+  color: red;
+  /* Định dạng chữ */
+  font-style: italic;
+  /* Font chữ */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Chuyển hoa thường */
+  text-transform:;
+  /* Căn lề */
+  text-align: center;
+  /* Cỡ chữ */
+  font-size: 40px;
+}</code></pre>
+    <hr />
+    <h4>&copy; Duy Bình</h4>
+  </body>
+</html>

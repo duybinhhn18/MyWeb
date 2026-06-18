@@ -1,0 +1,38 @@
+h1 {
+  /* Màu chữ */
+  color: red;
+  /* Định dạng chữ */
+  font-style: italic;
+  /* Font chữ */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Chuyển hoa thường */
+  text-transform:;
+  /* Căn lề */
+  text-align: center;
+  /* Cỡ chữ */
+  font-size: 40px;
+}
+h2 {
+  color: green;
+}
+h3 {
+  /* color:; */
+}
+.opacity_code {
+  opacity: 10;
+}
+input:checked ~ img {
+  /* Biến mất hoàn toàn (không có animation);*/
+  /* display: none; */
+  /* Biến mất nhưng vẫn còn chiếm vị trí (có animation)*/
+  /* visibility: hidden; */
+  /* Làm mờ (có animation)*/
+  opacity: 0;
+  visibility: hidden;
+}
+.transition {
+  transition: 1s;
+}
+body {
+  user-select: none;
+}
