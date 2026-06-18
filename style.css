@@ -33,6 +33,6 @@ input:checked ~ img {
 .transition {
   transition: 1s;
 }
-body {
+* {
   user-select: none;
 }
