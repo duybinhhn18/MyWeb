@@ -153,6 +153,83 @@
       >
     </h3>
     <hr />
+    <h2>IV.Các thẻ select</h2>
+    <h3>1.Combinator</h3>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Ký tự kết hợp</th>
+        <th>Nội dung</th>
+        <th>Ý nghĩa</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>*</td>
+          <td>*</td>
+          <td>Chọn tất cả phần tử</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>p.intro</td>
+          <td>element.class</td>
+          <td>Chọn tất cả phần tử <code>&lt;p&gt;</code> có class="intro"</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>div,p</td>
+          <td>element1,element2</td>
+          <td>Chọn tất cả phần tử &lt;div&lt; và phần tử &lt;p&gt;</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>div p</td>
+          <td>element1 element2</td>
+          <td>Chọn tất cả các thẻ &lt;p&gt; nằm trong thẻ &lt;div&gt;</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>div > p</td>
+          <td>element1 > element2</td>
+          <td>
+            Chọn tất cả thẻ &lt;p&gt; là con <b>trực tiếp</b> của thẻ
+            &lt;div&gt;
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>div + p</td>
+          <td>element1 + element2</td>
+          <td>
+            Chọn hần tử &lt;p&gt; đầu tiên được đặt ngay sau phần tử &lt;div&gt;
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>p ~ ul</td>
+          <td>element1 ~ element2</td>
+          <td>Chọn tất cả thẻ &lt;ul&gt; nằm sau thẻ &lt;div&gt;</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>2.Attribute</h3>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Cú pháp</th>
+        <th>Ví dụ</th>
+        <th>Ý nghĩa</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>[Attribute]</td>
+          <td>[href]</td>
+          <td>Chọn tất cả thẻ có thuộc tính: href</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
     <h4>&copy; Duy Bình</h4>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
