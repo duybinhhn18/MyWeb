@@ -42,8 +42,8 @@ input:checked ~ img {
 [target="_blank"] {
   color: red;
 }
-.Click_check:visited {
-  color: chocolate;
+/* .Click_check:visited {
+  color: chocolate; */
 }
 .mucluc {
   margin-left: 10px;
