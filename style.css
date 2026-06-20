@@ -18,6 +18,9 @@ h2 {
 h3 {
   /* color:; */
 }
+redhighlight {
+  color: red;
+}
 .opacity_code {
   opacity: 10;
 }
@@ -34,5 +37,16 @@ input:checked ~ img {
   transition: 1s;
 }
 * {
-  user-select: none;
+  /* user-select: none; */
+}
+[target="_blank"] {
+  color: red;
+}
+.Click_check:visited {
+  color: chocolate;
+}
+.mucluc {
+  margin-left: 10px;
+  margin-top: 0px;
+  line-height: 25px;
 }

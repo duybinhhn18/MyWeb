@@ -84,11 +84,24 @@
     <h4>&copy; Duy Bình</h4>
     <hr />
     <h3>
-      <a href="index.html">Home <br /></a>
-      <a href="./About/">About me <br /></a>
-      <a href="./Contact/">Contact with me <br /></a>
-      <a href="./music/index.html">Listen music <br /></a>
-      <a href="./pagecss/">Css page study</a>
+      <a href="../index.html" title="Trang chủ" class="Click_check"
+        >Home <br
+      /></a>
+      <a href="../About/index.html" title="Về chúng tôi" class="Click_check"
+        >About me <br
+      /></a>
+      <a href="../Contact/index.html" title="Liên hệ" class="Click_check"
+        >Contact with me <br
+      /></a>
+      <a href="../music/" title="Nghe nhạc" class="Click_check"
+        >Listen music <br
+      /></a>
+      <a
+        href="../pagecss/index.html"
+        title="Ghi chép học css"
+        class="Click_check"
+        >Css page study</a
+      >
     </h3>
     <hr />
     <video
@@ -101,8 +114,23 @@
     </video>
     <hr />
     <h1>Ghi chép học HTML</h1>
-
     <hr />
+    <h2>Mục lục</h2>
+    <h3 class="mucluc">
+      <a href="#I">I.Thẻ &lt;ol&gt; và thẻ &lt;ul&gt;</a> <br />
+      <a href="#II">II.ol ul chồng nhau</a> <br />
+      <a href="#III">III.TÌm hiểu thẻ "a" (anchor) gắn link, sdt, mail</a>
+      <br />
+      <a href="#IV">IV.Tìm hiểu thẻ "img": chèn ảnh</a> <br />
+      <a href="#V">V.HTML entities</a> <br />
+      <a href="#VI">VI.Tìm hiểu thẻ Pre (preformatted)</a> <br />
+      <a href="#VII">VII.Thẻ code</a> <br />
+      <a href="#VIII">VIII.Cách high light code</a> <br />
+      <a href="#IX">IX.Tìm hiểu về HTML TABLE</a> <br />
+      <a href="#X">X.Thẻ Colspan & Rowspan</a> <br />
+    </h3>
+    <hr />
+    <h1 id="I">Thẻ &lt;ol&gt; và thẻ &lt;ul&gt;</h1>
     <ul>
       <li>Test</li>
       <li>Test</li>
@@ -122,7 +150,7 @@
 
     <hr />
 
-    <h1>ol ul chồng nhau</h1>
+    <h1 id="II">ol ul chồng nhau</h1>
     <h2><b>Ví dụ 1</b></h2>
     <h3>Cách viết bài văn</h3>
 
@@ -163,7 +191,7 @@
     </ul>
 
     <hr />
-    <h1>TÌm hiểu thẻ "a" (anchor) gắn link, sdt, mail</h1>
+    <h1 id="III">TÌm hiểu thẻ "a" (anchor) gắn link, sdt, mail</h1>
     <h2><b>Ví dụ 1: Gắn link</b></h2>
 
     <a href="">Reload trang <br /></a>
@@ -174,7 +202,7 @@
     <a href="https://empire.edu.vn/" target="_self"
       >Link đến empire edu (mở tại trang này) <br
     /></a>
-    <a href="https://empire.edu.vn/" target="_blank"
+    <a href="https://empire.edu.vn/" target="_blank" style="color: blue"
       >Link đến empire edu (new tab)</a
     >
 
@@ -196,7 +224,7 @@
 
     <hr />
 
-    <h1>Tìm hiểu thẻ "img": chèn ảnh</h1>
+    <h1 id="IV">Tìm hiểu thẻ "img": chèn ảnh</h1>
     <h2><b>1.Thêm ảnh trực tuyến</b></h2>
     <img
       src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kZXxlbnwwfHwwfHx8MA%3D%3D"
@@ -222,14 +250,14 @@
     </p>
 
     <hr />
-    <h1>HTML entities</h1>
+    <h1 id="V">HTML entities</h1>
     <p>
       Cách tạo tiêu đề trong html chúng ta dùng: <b>&lt;h1&gt; &lt;/h1&gt;</b>
       <br />
       Cú pháp: &lt;h1&gt; Nhập nội dung ở đây &lt;/h1&gt;
     </p>
     <hr />
-    <h1>Tìm hiểu thẻ Pre (preformatted)</h1>
+    <h1 id="VI">Tìm hiểu thẻ Pre (preformatted)</h1>
     <p>Thẻ này có tác dụng giữ nguyên định dạng văn bản đầu vào.<br /></p>
     <pre>Ví dụ: Steve         Jobs        Việt             Nam</pre>
     <img
@@ -240,7 +268,7 @@
       Cách dùng: &lt;pre&gt; Nhập nội dung tại đây (đã định dạng)&lt;/pre&gt;
     </p>
     <hr />
-    <h1>Thẻ code</h1>
+    <h1 id="VII">Thẻ code</h1>
     <h2>
       Truy cập vào trang web sau để chuyển code thành entities html:
       <a href="https://codebeautify.org/html-escape-unescape" target="_blank"
@@ -261,7 +289,7 @@
 &lt;/html&gt;
 </code></pre>
     <hr />
-    <h1>Cách high light code</h1>
+    <h1 id="VIII">Cách high light code</h1>
     <a href="https://prismjs.com/" target="_blank">Link thư viện PrismJS</a>
     <h2>Cách làm:</h2>
     <h4>
@@ -306,7 +334,7 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <hr />
-    <h1>Tìm hiểu về HTML TABLE</h1>
+    <h1 id="IX">Tìm hiểu về HTML TABLE</h1>
     <h2>Các thẻ quan trọng</h2>
     <table>
       <thead>
@@ -417,7 +445,7 @@
       </tfoot>
     </table>
     <hr />
-    <h1>Thẻ Colspan & Rowspan</h1>
+    <h1 id="X">Thẻ Colspan & Rowspan</h1>
     <h2>Ý nghĩa các thẻ</h2>
     <table>
       <thead>
@@ -482,27 +510,6 @@
         </tr>
       </tbody>
     </table>
-    <hr />
-    <h1>Các thuộc tính cơ bản của CSS</h1>
-    <h3>
-      Truy cập trang web sau để tra cứu thông tin:
-      <a href="https://www.w3schools.com/cssref/index.php">Click here</a>
-    </h3>
-    <h2>Code mẫu một vài thuộc tính cơ bản (trong file .css)</h2>
-    <pre><code class = "language-html">h1 {
-  /* Màu chữ */
-  color: red;
-  /* Định dạng chữ */
-  font-style: italic;
-  /* Font chữ */
-  font-family: Arial, Helvetica, sans-serif;
-  /* Chuyển hoa thường */
-  text-transform:;
-  /* Căn lề */
-  text-align: center;
-  /* Cỡ chữ */
-  font-size: 40px;
-}</code></pre>
     <hr />
     <h4>&copy; Duy Bình</h4>
   </body>

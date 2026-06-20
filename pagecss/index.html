@@ -87,15 +87,38 @@
     <h4>&copy; Duy Bình</h4>
     <hr />
     <h3>
-      <a href="../index.html">Home <br /></a>
-      <a href="../About/index.html">About me <br /></a>
-      <a href="../Contact/index.html">Contact with me <br /></a>
-      <a href="../music/">Listen music <br /></a>
-      <a href="../pagecss/index.html">Css page study</a>
+      <a href="../index.html" title="Trang chủ" class="Click_check"
+        >Home <br
+      /></a>
+      <a href="../About/index.html" title="Về chúng tôi" class="Click_check"
+        >About me <br
+      /></a>
+      <a href="../Contact/index.html" title="Liên hệ" class="Click_check"
+        >Contact with me <br
+      /></a>
+      <a href="../music/" title="Nghe nhạc" class="Click_check"
+        >Listen music <br
+      /></a>
+      <a
+        href="../pagecss/index.html"
+        title="Ghi chép học css"
+        class="Click_check"
+        >Css page study</a
+      >
     </h3>
     <hr />
     <h1>Ghi chép học css</h1>
-    <h2>I.Một vài thuộc tính cơ bản của css</h2>
+    <hr />
+    <h2>Mục lục</h2>
+    <h4 class="mucluc">
+      <a href="#I">I.Một vài thuộc tính cơ bản của css</a> <br />
+      <a href="#II">II.Thuộc tính Opacity and Visibility</a> <br />
+      <a href="#III">III.Favicon: web icon</a> <br />
+      <a href="#IV">IV.Các thẻ select</a> <br />
+      <a href="#V">V.Pseudo-classes</a>
+    </h4>
+    <hr />
+    <h2 id="I">I.Một vài thuộc tính cơ bản của css</h2>
     <h3>
       Truy cập trang web sau để tra cứu thông tin:
       <a href="https://www.w3schools.com/cssref/index.php" target="_blank"
@@ -120,7 +143,7 @@
   font-size: 40px;
 }</code></pre>
     <hr />
-    <h2>II.Thuộc tính Opacity and Visibility</h2>
+    <h2 id="II">II.Thuộc tính Opacity and Visibility</h2>
     <h3>1.Opacity: Độ mờ của element</h3>
     <h4>
       Ví dụ về opacity (50%):
@@ -144,7 +167,7 @@
       alt="Steve jobs"
       class="transition"
     />
-    <h2>III.Favicon: web icon</h2>
+    <h2 id="III">III.Favicon: web icon</h2>
     <h3>Thêm vào trước thẻ &lt;/head&gt; đoạn code sau:</h3>
     <pre><code class = "language-html">&lt;link rel=&quot;shortcut icon&quot; href=&quot;Đường dẫn link favicon&quot; type=&quot;image/x-icon&quot; /&gt;</code></pre>
     <h3>
@@ -154,7 +177,7 @@
       >
     </h3>
     <hr />
-    <h2>IV.Các thẻ select</h2>
+    <h2 id="IV">IV.Các thẻ select</h2>
     <h3>1.Combinator</h3>
     <table>
       <thead>
@@ -227,6 +250,117 @@
           <td>[Attribute]</td>
           <td>[href]</td>
           <td>Chọn tất cả thẻ có thuộc tính: href</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>[Attribute=value]</td>
+          <td>[target="_blank"]</td>
+          <td>
+            Chọn tất cả các thuộc tính có chính xác giá trị: target="_blank"
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>[Attribute ~= value]</td>
+          <td>[title~="pic"]</td>
+          <td>Chọn tất cả thuộc tính: title có chứa từ pic trong giá trị</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>[Attribute *= value]</td>
+          <td>[title*="pic"]</td>
+          <td>
+            Chọn tất cả thuộc tính: title có chữa chuỗi pic trong giá trị <br />
+            Ví dụ: pic 123, abc pic,picaaacc abc,....
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>[Attribute |= value]</td>
+          <td>[title|="pic"]</td>
+          <td>
+            Chọn tất cả các thuộc tính: title có một từ duy nhất bắt đầu bằng từ
+            pic: pic, pic-123,...
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>[Attribute ^= value]</td>
+          <td>[title^="pic"]</td>
+          <td>
+            Chọn tất cả các thuộc tính: title bắt đầu bằng từ "pic" (không quan
+            tâm space đằng sau)
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>[Attribute $= value]</td>
+          <td>[title$="1"]</td>
+          <td>Chọn tất cả các thuộc tính: title kết thúc bằng ký tự "1"</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h2 id="V">V.Pseudo-classes</h2>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Pseudo-classes</th>
+        <th>Ví dụ</th>
+        <th>Ý nghĩa</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>:hover</td>
+          <td>p:hover</td>
+          <td>
+            Chọn các thẻ &lt;p&gt; khi <redhighlight>di chuột qua</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>:active</td>
+          <td>a:active</td>
+          <td>
+            Chọn các thẻ &lt;a&gt; khi
+            <redhighlight>nhấn giữ chuột</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>:link</td>
+          <td>a:link</td>
+          <td>
+            Chọn các thẻ &lt;a&gt; có liên kết
+            <redhighlight>chưa click vào</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>:visited</td>
+          <td>a:visted</td>
+          <td>
+            Chọn các thẻ &lt;a&gt; có iên kết
+            <redhighlight>đã click truy cập</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>:empty</td>
+          <td>div:empty</td>
+          <td>
+            Chọn các thẻ div <redhighlight>không có nội dung</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>:target</td>
+          <td>#home:target</td>
+          <td>
+            Chọn thẻ có id = "home" khi trên URL có hash tương ứng VD:
+            https://domain.com/#home
+          </td>
         </tr>
       </tbody>
     </table>
