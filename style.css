@@ -16,7 +16,7 @@ h2 {
   color: green;
 }
 h3 {
-  /* color:; */
+  font-size: 20px;
 }
 redhighlight {
   color: red;
@@ -37,7 +37,10 @@ input:checked ~ img {
   transition: 1s;
 }
 * {
-  /* user-select: none; */
+  user-select: none;
+}
+.language-html {
+  user-select: text;
 }
 [target="_blank"] {
   color: red;

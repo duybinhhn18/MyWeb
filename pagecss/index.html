@@ -302,6 +302,7 @@
     </table>
     <hr />
     <h2 id="V">V.Pseudo-classes</h2>
+    <h3>1.empty, target</h3>
     <table>
       <thead>
         <th>STT</th>
@@ -364,6 +365,163 @@
         </tr>
       </tbody>
     </table>
+    <h3>2.Child selectors</h3>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Child selectors</th>
+        <th>Ví dụ</th>
+        <th>Ý nghĩa</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>:first-child</td>
+          <td>p:first-child</td>
+          <td>
+            Chọn các thẻ &lt;p&gt; là
+            <redhighlight>thẻ con đầu tiên</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>:last-child</td>
+          <td>p:last-child</td>
+          <td>
+            Chọn các thẻ &lt;p&gt; là
+            <redhighlight>thẻ con cuối cùng</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>:nth-child(2)</td>
+          <td>p:nth-chid(2)</td>
+          <td>
+            Chọn các thẻ &lt;p&gt; là
+            <redhighlight>thẻ con thứ 2 từ trên đếm xuống</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>:nth-last-child(2)</td>
+          <td>p:nth-last-child(2)</td>
+          <td>
+            Chọn các thẻ &lt;p&gt; là
+            <redhighlight>thẻ con thứ 2 từ dưới đếm lên</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>:only-child</td>
+          <td>p:only-child</td>
+          <td>
+            Chọn các thẻ &lt;p&gt; là
+            <redhighlight>là thẻ con duy nhất</redhighlight>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>3.Type selectors</h3>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Type selectors</th>
+        <th>Ví dụ</th>
+        <th>Ý nghĩa</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>:first-of-type</td>
+          <td>p:first-of-type</td>
+          <td>
+            Chọn các thẻ &lt;p&gt;
+            <redhighlight>xuất hiện đầu tiên trong thẻ cha</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>:last-of-child</td>
+          <td>p:last-of-child</td>
+          <td>
+            Chọn các thẻ &lt;p&gt;
+            <redhighlight>xuất hiện cuối cùng trong thẻ cha</redhighlight>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>:nth-of-type(n)</td>
+          <td>p:nth-of-type(n)</td>
+          <td>
+            Chọn các thẻ &lt;p&gt;
+            <redhighlight>xuất hiện lần thứ n</redhighlight> trong thẻ cha
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>:nth-last-of-type(n)</td>
+          <td>p:nth-last-of-type(n)</td>
+          <td>
+            Chọn các thẻ &lt;p&gt;
+            <redhighlight>xuất hiện thứ n</redhighlight> trong thẻ cha tính từ
+            dưới lên
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>:only-of-type</td>
+          <td>p:only-of-type</td>
+          <td>
+            Chọn các thẻ &lt;p&gt;
+            <redhighlight>xuất hiện duy nhất</redhighlight> trong thẻ cha
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>4.Not selectors</h3>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Not selectors</th>
+        <th>Ví dụ</th>
+        <th>Ý nghĩa</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>:not(selector)</td>
+          <td>.top:not(p)</td>
+          <td>Chọn các thẻ có class="top" loại trừ thẻ &lt;p&gt;</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>5.Thứ tự ưu tiên CSS selector</h3>
+    <h4>Code này s3 dứng dụng cho các ví dụ bên dưới:</h4>
+    <pre><code class="language-htm">&lt;body&gt;
+      &lt;h1 id=&quot;line_1&quot; class=&quot;top&quot;&gt;Ví dụ&lt;/h1&gt; 
+&lt;/body&gt;</code></pre>
+    <h4>1.!important</h4>
+    <pre><code class="language-html">* {
+  user-select: none !important;
+}</code></pre>
+    <h4>2.Inline style (viết trên code HTML)</h4>
+    <pre><code class="language-html">&lt;h1 style=&quot;color: red;&quot;&gt;Ví dụ&lt;/h1&gt;</code></pre>
+    <h4>3.ID (#) selector (viết trong file css)</h4>
+    <pre><code class="language-html">#line_1 {
+  color: red;
+}   </code></pre>
+    <h4>4.Class(.) hoặc pseudo-class (:) slector</h4>
+    <pre><code class="language-html">.top {
+  color: red;
+}   </code></pre>
+    <h4>5.Element selector (h,p,li,div,...)</h4>
+    <pre><code class="language-html">h1 {
+    color: red;
+}   </code></pre>
+    <h4>6.Universal selector (*): Bộ chọn chung</h4>
+    <pre><code class="language-html">* {
+  color: red;
+}</code></pre>
     <hr />
     <h4>&copy; Duy Bình</h4>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
