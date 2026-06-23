@@ -18,11 +18,32 @@ h2 {
 h3 {
   font-size: 20px;
 }
+h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 redhighlight {
   color: red;
 }
+div p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container {
+  margin: 0px auto;
+}
+* {
+  user-select: none;
+}
+.language-html {
+  user-select: text;
+}
+
+/*  */
+/*  */
+/*  */
 .opacity_code {
-  opacity: 10;
+  opacity: 20;
 }
 input:checked ~ img {
   /* Biến mất hoàn toàn (không có animation);*/
@@ -36,12 +57,7 @@ input:checked ~ img {
 .transition {
   transition: 1s;
 }
-* {
-  user-select: none;
-}
-.language-html {
-  user-select: text;
-}
+
 [target="_blank"] {
   color: red;
 }
@@ -52,4 +68,79 @@ input:checked ~ img {
   margin-left: 10px;
   margin-top: 0px;
   line-height: 25px;
+}
+/* Box model */
+div.box-model-padding {
+  width: 100px;
+  height: 100px;
+  color: yellow;
+  background-color: red;
+  text-align: center;
+
+  /* TRên dưới - trái phải */
+  padding: 10px 20px;
+
+  /* Trên - trái phải - dưới */
+  padding: 10px 20px 30px;
+
+  /* Trên - phải - dưới - trái */
+  padding: 10px 20px 30px 40px;
+
+  padding: 10px;
+}
+div.box-model-border {
+  width: 100px;
+  height: 100px;
+  color: yellow;
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+
+  /* Viết tường minh */
+  /* Tác động cả 4 cạnh */
+  border-width: 10px;
+
+  /* TRên dưới - trái phải */
+  border-width: 10px 20px;
+
+  /* Trên - trái phải - dưới */
+  border-width: 10px 20px 30px;
+
+  /* Trên - phải - dưới - trái */
+  border-width: 10px 20px 30px 40px;
+
+  border-style: ridge;
+  border-color: yellow;
+
+  /* Viết tắt */
+  border: 10px ridge yellow;
+
+  /* Bo góc */
+  /* Cả 4 góc */
+  border-radius: 10%;
+  /* Trên phải - dưới trái */
+  border-radius: 10% 20%;
+  /* Trên trái - trên phải dưới trái - dưới phải */
+  border-radius: 10% 20% 30%;
+  /* Trên trái - trên phải - dưới phải - dưới trái */
+  border-radius: 10% 10% 10% 10%;
+}
+div.box-model-margin {
+  width: 100px;
+  height: 100px;
+  color: yellow;
+  background-color: red;
+  text-align: center;
+
+  /* TRên dưới - trái phải */
+  margin: 10px 20px;
+
+  /* Trên - trái phải - dưới */
+  margin: 10px 20px 30px;
+
+  /* Trên - phải - dưới - trái */
+  margin: 10px 20px 30px 40px;
+
+  /* Tác động cả 4 cạnh */
+  margin: 10px;
 }
