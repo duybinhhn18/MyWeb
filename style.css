@@ -46,6 +46,38 @@ div p {
 .language-html {
   user-select: text !important;
 }
+#backToTop {
+  position: fixed;
+  bottom: 20px; /* Cách đáy 20px */
+  right: 20px; /* Cách phải 20px */
+  z-index: 99; /* Luôn nằm trên các phần tử khác */
+  border: none;
+  outline: none;
+  background-color: #007bff; /* Màu xanh nước biển, đổi màu tùy ý */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 45%; /* Làm nút hình tròn */
+  font-size: 18px;
+  transition: all 0.3s ease; /* Hiệu ứng mượt mà */
+
+  /* Ẩn nút mặc định khi ở đầu trang */
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiệu ứng khi di chuột vào */
+#backToTop:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* Nhấp nhô nhẹ khi hover */
+}
+
+/* Lớp này sẽ được JS thêm vào khi cuộn xuống */
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 /*  */
 /*  */
