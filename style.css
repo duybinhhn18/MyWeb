@@ -17,6 +17,10 @@ h2 {
 }
 h3 {
   font-size: 20px;
+  margin-bottom: 5px;
+}
+h4 {
+  margin-top: 5px;
 }
 h5 {
   margin-top: 20px;
@@ -36,7 +40,7 @@ div p {
   user-select: none;
 }
 .language-html {
-  user-select: text;
+  user-select: text !important;
 }
 
 /*  */
@@ -70,13 +74,14 @@ input:checked ~ img {
   line-height: 25px;
 }
 /* Box model */
-div.box-model-padding {
+.box-model {
   width: 100px;
   height: 100px;
   color: yellow;
   background-color: red;
   text-align: center;
-
+}
+.padding {
   /* TRên dưới - trái phải */
   padding: 10px 20px;
 
@@ -88,14 +93,7 @@ div.box-model-padding {
 
   padding: 10px;
 }
-div.box-model-border {
-  width: 100px;
-  height: 100px;
-  color: yellow;
-  background-color: red;
-  text-align: center;
-  padding: 20px;
-
+.border {
   /* Viết tường minh */
   /* Tác động cả 4 cạnh */
   border-width: 10px;
@@ -125,7 +123,7 @@ div.box-model-border {
   /* Trên trái - trên phải - dưới phải - dưới trái */
   border-radius: 10% 10% 10% 10%;
 }
-div.box-model-margin {
+.about-content {
   width: 100px;
   height: 100px;
   color: yellow;
@@ -143,4 +141,25 @@ div.box-model-margin {
 
   /* Tác động cả 4 cạnh */
   margin: 10px;
+}
+.outline {
+  margin-left: 10px;
+  outline: 8px solid green;
+  /* Khoảng cách từ border (hoặc ô content, padding nếu không có border) cho đến outline */
+  outline-offset: 3px;
+}
+.avata {
+  width: 120px;
+  height: 120;
+  border-radius: 50%;
+  border: 3px solid gray;
+  margin-left: -70px;
+}
+.avata:first-child {
+  margin-left: 0px;
+}
+.content {
+  background: yellow;
+  padding: 20px;
+  display: inline-block;
 }
