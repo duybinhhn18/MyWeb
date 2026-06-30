@@ -27,6 +27,9 @@ h5 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+a {
+  text-decoration: unset;
+}
 p {
   font-size: 19px;
 }
@@ -40,11 +43,14 @@ div p {
 .container {
   margin: 0px auto;
 }
-* {
-  user-select: none;
+.red_color {
+  color: red;
 }
+/* * {
+  user-select: none;
+} */
 .language-html {
-  user-select: text !important;
+  user-select: all !important;
 }
 #backToTop {
   position: fixed;
@@ -77,6 +83,20 @@ div p {
 #backToTop.show {
   opacity: 1;
   visibility: visible;
+}
+/* Vẽ khung bảng */
+table {
+  border-collapse: collapse;
+  width: 80%
+}
+th, td {
+  border: 1px solid black;
+  padding: 4px;
+}
+th {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 /*  */
@@ -198,4 +218,34 @@ input:checked ~ img {
   background: yellow;
   padding: 20px;
   display: inline-block;
+}
+
+/* Vận dụng inline, inline-block */
+.link_button {
+  /*
+  Không áp dụng được
+  1.padding-top, padding-bottom
+  2.margin-top, margin-bottom
+  3.width, height, min-wight, min-height */
+  background: pink;
+  font-size: 30px;
+  border-radius: 900px;
+  width: 200px;
+  padding: 8px 16px;
+  text-align: center;
+  display: inline-block;
+}
+.link_button:hover {
+  background: black;
+  color: white;
+}
+
+/* CSS UNIT */
+.box {
+  width: 50%;
+  background-color: red;
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 30px;
+  font-style: italic;
 }
