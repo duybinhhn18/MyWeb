@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="../reset.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../style.css" />
     <link
       rel="stylesheet"
@@ -123,7 +129,8 @@
         <a href="#VIII">VIII.Inheritance - Kế thừa</a> <br />
         <a href="#IX">IX.Reset css</a> <br />
         <a href="#X">X.Block, inline and inline-block</a><br />
-        <a href="#XI">XI.CSS UNIT</a>
+        <a href="#XI">XI.CSS UNIT</a> <br />
+        <a href="#XII">XII.Typography in css</a>
       </h4>
       <hr />
       <h2 id="I">I.Một vài thuộc tính cơ bản của css</h2>
@@ -739,6 +746,163 @@
       </table>
       <h3>3.Test</h3>
       <div class="box">Test</div>
+      <hr />
+      <h2 id="XII">XII.Typography in css</h2>
+      <table>
+        <thead>
+          <th>STT</th>
+          <th colspan="2">Thuộc tính</th>
+          <th>Ý nghĩa</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td colspan="2">letter-spacing</td>
+            <td>Tăng giảm khoảng cách giữa các ký tự</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td colspan="2">word-spacing</td>
+            <td>Tăng giảm khoảng cách giữa các từ</td>
+          </tr>
+          <tr>
+            <td rowspan="4">3</td>
+            <td rowspan="4">text-align</td>
+            <td>:justify</td>
+            <td>Căn dàn đều hai bên</td>
+          </tr>
+          <tr>
+            <td>:left</td>
+            <td>Căn trái - mặc định</td>
+          </tr>
+          <tr>
+            <td>:right</td>
+            <td>Căn phải</td>
+          </tr>
+          <tr>
+            <td>:centre</td>
+            <td>Căn giữa (tính trong box chứa nó)</td>
+          </tr>
+          <tr>
+            <td rowspan="5">4</td>
+            <td rowspan="5">text-decoration</td>
+            <td>:none</td>
+            <td>Bỏ dấu gạch chân</td>
+          </tr>
+          <tr>
+            <td>:underline</td>
+            <td>Thêm dấu gạch chân</td>
+          </tr>
+          <tr>
+            <td>:line-through</td>
+            <td>Thêm gạch ngang</td>
+          </tr>
+          <tr>
+            <td>:overline</td>
+            <td>Gạch trên đầu</td>
+          </tr>
+          <tr>
+            <td>:underline dotted blue 5px</td>
+            <td>Có thể định dạng kiểu dấu gạch, màu sắc, kích thước</td>
+          </tr>
+          <tr>
+            <td rowspan="2">5</td>
+            <td rowspan="2">text-indent</td>
+            <td>:-40px</td>
+            <td>Thụt lề -40px</td>
+          </tr>
+          <tr>
+            <td>:40px</td>
+            <td>Thụt lề 40px</td>
+          </tr>
+          <tr>
+            <td rowspan="3">6</td>
+            <td rowspan="3">text-transform</td>
+            <td>:capitalize</td>
+            <td>Viết hoa chữ cái đầu</td>
+          </tr>
+          <tr>
+            <td>:lowercase</td>
+            <td>Viết thường toàn bộ text</td>
+          </tr>
+          <tr>
+            <td>:uppercase</td>
+            <td>Viết hoa toàn bộ text</td>
+          </tr>
+          <tr>
+            <td rowspan="5">7</td>
+            <td rowspan="5">white-space</td>
+            <td>:normal</td>
+            <td>Trạng thái mặc định</td>
+          </tr>
+          <tr>
+            <td>:nowrap</td>
+            <td>Không xuống dòng (kể cả chạm tới lề)</td>
+          </tr>
+          <tr>
+            <td>:pre</td>
+            <td>Giữ nguyên định dạng code, giống thẻ pre</td>
+          </tr>
+          <tr>
+            <td>:pre-line</td>
+            <td>
+              -Tất cả khoảng trắng thừa mỗi dòng trong nội dung văn bản sẽ bị
+              loại bỏ. <br />
+              -Dòng mới (xuống dòng) được giữ nguyên.
+            </td>
+          </tr>
+          <tr>
+            <td>:pre-wrap</td>
+            <td>
+              Giữ nguyên định dạng code, giống thẻ pre, nhưng dụng lề trang thì
+              xuống dòng
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td colspan="2">word-break: break-all</td>
+            <td>
+              Khi đoạn text hoặc link dài, người dùng nhập liền nhau có thể gây
+              vỡ giao diện vì text không bị xuốn dòng. Có thể dùng thuộc tính
+              trên để bẻ xuống hàng.
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td colspan="2">text-shadow: 0px 0px 0px red</td>
+            <td>
+              -Tạo đổ bóng cho text. <br />
+              -Cú pháp: &lt;trục x&gt; &lt;trục y&gt; &lt;độ nhòe (blur)&gt;
+              &lt;color&gt; <br />
+              -Thêm thông tin:
+              <a href="https://cssgenerator.org/text-shadow-css-generator.html"
+                >Click here</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="4">10</td>
+            <td rowspan="4">overflow</td>
+            <td>:srcoll</td>
+            <td>Tạo thanh cuộn: luôn hiển thị</td>
+          </tr>
+          <tr>
+            <td>:hidden</td>
+            <td>Ẩn văn bản nếu văn bản dài hơn box chứa nó</td>
+          </tr>
+          <tr>
+            <td>:Visible (dafault)</td>
+            <td>Thuộc tính mặc định: hiển thị văn bản kể cả vượt box chứa</td>
+          </tr>
+          <tr>
+            <td>:auto</td>
+            <td>
+              1.Nếu nội dung ngắn: Không có thanh cuộn. <br />
+              2.Nếu nội dung vượt box chứa: Tự sinh ra thanh cuộn.
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <hr />
       <h4>&copy; Duy Bình</h4>
     </div>
