@@ -117,8 +117,9 @@ video {
   width: 90%;
   height: 5%;
 }
-* {
-  outline: 1px solid red;
+video.tuhoc_cc{
+  width: 80%;
+  height: 5%;
 }
 
 /*  */
