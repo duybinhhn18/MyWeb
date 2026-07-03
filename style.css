@@ -105,6 +105,18 @@ th {
   text-transform: uppercase;
   font-weight: bolder;
 }
+img {
+  width: 80%;
+  height: 5%;
+}
+img.steve_jobs {
+  width: 40%;
+  height: 5%;
+}
+video {
+  width: 90%;
+  height: 5%;
+}
 
 /*  */
 /*  */
