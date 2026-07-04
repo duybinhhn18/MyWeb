@@ -94,16 +94,23 @@ div p {
 table {
   border-collapse: collapse;
   width: 90%;
+  /* table-layout: fixed; */
+  white-space: normal;
+  word-break: break-all;
 }
 th,
 td {
   border: 1px solid black;
   padding: 4px;
+  white-space: normal;
+  word-break: break-all;
 }
 th {
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
+  white-space: normal;
+  word-break: break-all;
 }
 img {
   width: 80%;
