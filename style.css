@@ -137,27 +137,60 @@ video.tuhoc_cc {
   background-color: yellow;
 }
 .menu {
-  width: 100%;
-  height: 50%;
-  /* display: inline-block; */
+  width: 95vw;
+  margin: 0 auto;
 }
 div.menu h4 {
+  --menu-height: unset;
+  --menu-padding-top: 15px;
+  --menu-padding-bottom: 1px;
+
+  overflow: auto;
+  height: var(--menu-height, unset);
   margin-top: 0px;
   line-height: 25px;
   outline: 2px solid rgba(0, 0, 0, 1);
   padding-left: 10px;
-  padding-top: 15px;
-  padding-bottom: 1px;
+  padding-top: var(--menu-padding-top, 15px);
+  padding-bottom: var(--menu-padding-bottom, 1px);
 }
-div.menu h2 {
+/* Khung cha bao bọc thanh tiêu đề */
+div.header_menu {
   width: 100%;
-  margin-bottom: 1px;
-  text-align: center;
   outline: 2px solid rgba(0, 0, 0, 1);
+  position: relative;
+  text-align: center;
+  padding: 5px 0;
+}
+div.header_menu h2 {
+  margin: 0;  
+  padding-bottom: 2px;
+  color: green;
+}
+div.header_menu input#hide_menu {
+  position: absolute;
+  right: 90px; 
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+div.header_menu label[for="hide_menu"] {
+  position: absolute;
+  right: 10px;       
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
 }
 div.menu a {
   text-decoration: none;
 }
+
+.header_menu:has(#hide_menu:checked) + .mucluc {
+  --menu-height: 0px;
+  --menu-padding-top: 0px;
+  --menu-padding-bottom: 0px
+}
+
 /*  */
 /*  */
 /*  */
@@ -480,4 +513,3 @@ input:checked ~ img {
     color:#e19d0a;
     margin-left: 20px;
   }
-}
