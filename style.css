@@ -191,7 +191,13 @@ div.menu a {
   --menu-padding-top: 0px;
   --menu-padding-bottom: 0px
 }
-
+.messenger_button {
+  color: #0866ff;
+  font-size: 50px;
+  position: fixed;
+  right: 15px;
+  bottom: 80px;
+}
 /*  */
 /*  */
 /*  */
@@ -514,3 +520,53 @@ input:checked ~ img {
     color:#e19d0a;
     margin-left: 20px;
   }
+}
+
+/* Position */
+/* Position static */
+.box_position_static {
+  width: 100px;
+  height: 100px;
+  color: white;
+  /* Căn giữa text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1_position_static {
+  background-color: red;
+  
+}
+
+.box2_position_static {
+  background-color: yellow;
+  position: absolute;
+}
+
+.box3_position_static {
+  background-color: green;
+}
+
+/* Ví dụ */
+.noti {
+  position: relative;
+  margin-left: 5px;
+  font-size: 100px;
+  color: cyan;
+  display: inline-block;
+  /* background-color: red; */
+}
+
+.number_messenger {
+  color: black;
+  background-color: red;
+  font-size: 40px;
+  padding: 0px 5px;
+  border-radius: 20px;
+
+
+  position: absolute;
+  left: 80px;
+  top: 5px;
+}
