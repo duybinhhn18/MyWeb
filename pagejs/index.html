@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Học javascript</title>
+  </head>
+  <body>
+    <h4>&copy; Duy Bình</h4>
+    <hr />
+    <h3>
+      <a href="../index.html" title="Trang chủ" class="Click_check"
+        ><i class="fa-solid fa-house"></i>Home <br
+      /></a>
+      <a href="../About/index.html" title="Về chúng tôi" class="Click_check"
+        ><i class="fa-solid fa-circle-info"></i>About me <br
+      /></a>
+      <a href="../Contact/index.html" title="Liên hệ" class="Click_check"
+        ><i class="fa-solid fa-handshake"></i>Contact with me <br
+      /></a>
+      <a href="../music/" title="Nghe nhạc" class="Click_check"
+        ><i class="fa-solid fa-music"></i>Listen music <br
+      /></a>
+      <a
+        href="../pagecss/index.html"
+        title="Ghi chép học css"
+        class="Click_check"
+        ><i class="fa-brands fa-css"></i>Css page <br
+      /></a>
+      <a href="./index.html">JavaScript page</a>
+    </h3>
+    <hr />
+
+    <div class="menu">
+      <div class="header_menu">
+        <h2>Mục Lục</h2>
+        <input type="checkbox" id="hide_menu" />
+        <label for="hide_menu">Ẩn mục lục</label>
+      </div>
+      <h4 class="mucluc">
+        <a href="#I">I.Hàm alert, console.log: Hiện text ra trang web</a> <br />
+        <a href="#II">II.Hàm promt: nhập dữ liệu</a> <br />
+        <a href="#III">III.Biến và khai báo biến</a> <br />
+        <a href="#IV">IV.Các kiểu dữ liệu trong JS</a> <br />
+        <a href="#V">V.Các cách xuất dữ liệu trong JS</a> <br />
+        <a href="#VI">VI.Các phép toán cơ bản trong JS</a> <br />
+        <a href="#VII">VII.Ép kiểu dữ liệu</a> <br />
+        <a href="#VIII">VIII.Toán tử gán</a> <br />
+        <a href="#IX">IX.Toán tử tiền tố, hậu tố (prefix, postfix)</a> <br />
+      </h4>
+    </div>
+    <hr />
+
+    <h1 class="header">Ghi chép học javascript</h1>
+    <section id="I">
+      <h2>I.Hàm alert, console.log: Hiện text ra trang web</h2>
+      <h3>1.Hàm alert</h3>
+      <p>-Chức năng: Hiển thị một hộp thoại chứa văn bản trên trang web.</p>
+      <p>-Cú pháp:</p>
+      <pre><code class="language-html">alert("Helo")</code></pre>
+      <h3>2.Hàm console.log</h3>
+      <p>-Chức năng: hiển thị văn bản ngay trong console của web.</p>
+      <p>-Cú pháp:</p>
+      <pre><code class="language-html">console.log("Helo")</code></pre>
+    </section>
+
+    <hr />
+
+    <section id="II">
+      <h2>II.Hàm promt: nhập dữ liệu</h2>
+      <p>
+        -Chức năng: hiển thị một ô nhập liệu cho người dùng ở đầu trang web.
+      </p>
+      <p>-Cú pháp:</p>
+      <pre><code class="language-htm">prompt("Hay nhap ten cua ban: ")</code></pre>
+    </section>
+
+    <hr />
+
+    <section id="III">
+      <h2>III.Biến và khai báo biến</h2>
+      <h3>1.Biến và khai báo biến</h3>
+      <p>
+        -Khái niệm: biến là một ô nho81 trong bộ nhớ được đặt tên và sử dụng để
+        lưu trữ giá trị.
+      </p>
+      <p>-Các từ khóa khai báo biến:</p>
+      <table>
+        <thead>
+          <th>Keyword</th>
+          <th>Mô tả</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>var</td>
+            <td>
+              Từ khóa khai báo biến
+              <strong class="redhighlight">trước ES6</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>let</td>
+            <td>
+              Từ khóa khai báo biến
+              <strong class="redhighlight">được giới thiệu từ ES6</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>const</td>
+            <td>
+              Khai báo hằng số:
+              <strong class="redhighlight"
+                >biến không thể thay đổi giá trị sau khi đã được gán</strong
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-Cú pháp:</p>
+      <pre><code class="language-html">
+// Khai báo biến (không gán giá trị)
+var My_name;
+let Your_name;
+
+// Khởi tạo biến (có gán giá trị)
+var Tuoi = 16;
+const doSoi = 100;
+let first_name = "Gay";
+
+// Xuất giá trị của biến
+console.log(doSoi)
+console.log("Nhiệt độ sôi của nước là: " + doSoi + " độ C")
+console.log("Tuổi của " + first_name + " là: " + Tuoi + " tuổi")
+        </code></pre>
+
+      <h3>2.Quy tắc đặt tên biến</h3>
+      <p>
+        -Tên biến có thể
+        <strong class="redhighlight">bắt đầu bằng chữ cái</strong>, dấu gạch
+        dưới <strong class="redhighlight">_</strong> hoặc dấu
+        <strong class="redhighlight">$</strong>.
+      </p>
+      <p>
+        -JavaScript phân biệt chữ hoa và chữ thường, nên
+        <strong class="redhighlight">age</strong> và
+        <strong class="redhighlight">Age là 2 biến khác nhau.</strong>
+      </p>
+      <p>
+        -Không trùng với các từ khóa của JavaScript: tránh sử dụng các từ khóa
+        có sẵn trong JavaScript như
+        <strong class="redhighlight"
+          >var, let, const, if, else, for, while</strong
+        >,... làm tên biến.
+      </p>
+      <p>
+        -Tuân theo quy ước đặt tên biến theo kiểu
+        <strong class="redhighlight">camelCase</strong>: chữ cái dầu tiên của từ
+        thứ 2 viết hoa, còn lại viết thường.
+        <strong class="redhighlight">Ví dụ: "yourName"</strong>
+      </p>
+    </section>
+
+    <hr />
+
+    <section id="iV">
+      <h2>IV.Các kiểu dữ liệu trong JS</h2>
+      <table>
+        <thead>
+          <th>STT</th>
+          <th>Kiểu dữ liệu</th>
+          <th>Mô tả</th>
+          <th>Ví dụ</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>String</td>
+            <td>
+              Kiểu chuỗi: kiểu dữ liệu đẻ lưu trữ
+              <strong class="redhighlight">chuỗi kí tự</strong>.
+            </td>
+            <td>
+              let myString = <strong class="redhighlight">"Xin chao"</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Number</td>
+            <td>
+              Kiểu số: Kiểu dữ liệu để lưu trữ số, có thể là
+              <strong class="redhighlight">số nguyên</strong> hoặc
+              <strong class="redhighlight">số thực</strong>.
+            </td>
+            <td>
+              let soNguyen = <strong class="redhighlight">10</strong>; <br />
+              let soThuc = <strong class="redhighlight">3.14</strong>;
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Boolean</td>
+            <td>
+              Kiểu logic chỉ có thể nhận giá trị
+              <strong class="redhighlight">true</strong> hoặc
+              <strong class="redhighlight">false</strong>
+            </td>
+            <td>
+              let isTrue = true; <br />
+              let isFalse = false;
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Underfined</td>
+            <td>
+              Biến chưa được gán giá trị sẽ có kiểu dữ liệu là
+              <strong class="redhighlight">undefined</strong>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Null</td>
+            <td>
+              Biến chưa được gán giá trị là
+              <strong class="redhighlight">null</strong>. <br />
+              Thường được dùng để reset biến, gán giá trị mặc định.
+            </td>
+            <td>let nullValue = <strong class="redhighlight">null</strong>;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <section id="V">
+      <h2>V.Các cách xuất dữ liệu trong JS</h2>
+      <p>-Code:</p>
+      <pre><code class="language-html">
+// Các cách xuất dữ liệu
+let soA = 25
+let soB = 5
+
+// Cách 1:
+console.log("Căn bậc 2 của " + soA + " là: " + soB)
+
+// Cách 2:
+console.log("Căn bậc 2 của" , soA , "là:" , soB)
+
+// Cách 3:
+console.log(`Căn bậc 2 của ${soA} là: ${soB}`)
+
+// Cách 4
+console.log(`Căn bậc 2 của %s là: %s `, soA, soB)
+
+// Luyện tập
+let a = 4,
+    b = 3,
+    kq = a * b;
+
+console.log(`${a} x ${b} = ${kq}`)
+        </code></pre>
+    </section>
+
+    <hr />
+
+    <section id="VI">
+      <h2>VI.Các phép toán cơ bản trong JS</h2>
+      <p>-Code:</p>
+      <pre><code class="language-htm">
+// Các phép toán trong JS
+let A = 3;
+let B = 2;
+
+// Các phép toán
+let tong = A + B;
+let hieu = A - B;
+let tich = A * B;
+let thuong = A / B;
+let soDu = A % B;
+
+// Xuất kết quả
+console.log(`Tổng 2 số ${A} và ${B}: ${tong}`)
+console.log(`Hiệu 2 số ${A} và ${B}: ${hieu}`)
+console.log(`Tích 2 số ${A} và ${B}: ${tich}`)
+console.log(`Thương 2 số ${A} và ${B}: ${thuong}`)
+console.log(`Số dư phép chia 2 số ${A} và ${B}: ${soDu}`)
+        </code></pre>
+    </section>
+
+    <hr />
+
+    <section id="VII">
+      <h2>VII.Ép kiểu dữ liệu</h2>
+      <p>-Các hàm ép kiểu dữ liệu:</p>
+      <table>
+        <thead>
+          <th>STT</th>
+          <th>Hàm</th>
+          <th>Ý nghĩa</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>parseInt</td>
+            <td>Chuyển sang kiểu dữ liệu số nguyên.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>parseFloat</td>
+            <td>Chuyển sang kiểu dữ liệu số thực.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Number</td>
+            <td>Chuyển sang kiểu dữ liệu số (bao gồm int và float).</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>-Code:</p>
+      <pre><code class="language-html">
+// Ép kiểu dữ liệu
+// Nhập dữ liệu + chuyển sang kiểu Int
+let NumberA = parseInt(prompt("Hãy nhập vào số A: "))
+
+// Nhập dữ liệu + chuyển sang kiểu Float
+let NumberB = parseFloat(prompt("Hãy nhập vào số B: "))
+
+// Nhập dữ liệu + chuyển sang kiểu Number
+let NumberC = Number(prompt("Hãy nhập vào số C: "))
+        </code></pre>
+    </section>
+
+    <hr />
+
+    <section id="VIII">
+      <h2>VIII.Toán tử gán</h2>
+      <p>-Các toán tử gán:</p>
+      <table>
+        <thead>
+          <th>Phép tính</th>
+          <th>Giải thích</th>
+          <th>Công thức</th>
+          <th>Ý nghĩa</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>=</td>
+            <td>Gán bằng</td>
+            <td>x = 1</td>
+            <td>x = 1</td>
+          </tr>
+          <tr>
+            <td>+=</td>
+            <td>Gán cộng</td>
+            <td>x += y</td>
+            <td>x = x + y</td>
+          </tr>
+          <tr>
+            <td>-=</td>
+            <td>Gán trừ</td>
+            <td>x -= y</td>
+            <td>x = x - y</td>
+          </tr>
+          <tr>
+            <td>*=</td>
+            <td>Gán nhân</td>
+            <td>x *= y</td>
+            <td>x = x * y</td>
+          </tr>
+          <tr>
+            <td>/=</td>
+            <td>Gán chia</td>
+            <td>x /= y</td>
+            <td>x = x / y</td>
+          </tr>
+          <tr>
+            <td>%=</td>
+            <td>Gán chia lấy dư</td>
+            <td>x %= y</td>
+            <td>x = x % y</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <section id="IX">
+      <h2>IX.Toán tử tiền tố, hậu tố (prefix, postfix)</h2>
+      <h3>1.Trong biểu thức đơn giản</h3>
+      <p>-Các toán tử tiền tố, hậu tố:</p>
+      <table>
+        <thead>
+          <th>Ký hiệu</th>
+          <th>Giải thích</th>
+          <th>Cách biểu đạt</th>
+          <th>Kết quả</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>++</td>
+            <td>Tăng giá trị lên 1</td>
+            <td>a = 1, a++</td>
+            <td>a = 2</td>
+          </tr>
+          <tr>
+            <td>--</td>
+            <td>Giảm giá trị đi 1</td>
+            <td>a = 1, a--</td>
+            <td>a = 0</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr style="text-align: center">
+            <td colspan="4">
+              Phép tính đơn lẻ , viết ++, -- trước hay sau đều được.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <p>-Code:</p>
+      <pre><code class="language-html">
+// Toán tử tiền tố hậu tố
+let a = 2;
+let b = 3;
+let c = 4;
+let d = 5;
+
+a++ // Tăng a lên 1 đơn vị: a = 3 
+b-- // Giảm b đi 1 đơn vị: b = 2 
+++c // Tăng c lên 1 đơn vị: c = 5 
+--b // Giảm d đi 1 đơn vị: d = 4
+        </code></pre>
+
+      <h3>2.Trong biểu thức phức tạp</h3>
+      <p>-Thứ tự thực hiện phép tính như sau:</p>
+      <p>Step 1: Tính Prefix</p>
+      <p>Step 2: Tính các phép toán còn lại</p>
+      <p>Step 3: Gán giá trị cho biến ở bên trái dấu bằng</p>
+      <p>Step 4: Tính Postfix</p>
+
+      <p>-Ví dụ:</p>
+      <pre><code class="language-html">
+// Thứ tự thực hiện phép toán
+let a = 1;
+let b = 2;
+
+let kq = a++ - ++b + 1;
+
+// Thứ tự như sau:
+// ++b => b = 3
+// a = 1, b = 3 => 1 - 3 + 1 = -1
+// kq = -1
+// a++ => a = 2
+        </code></pre>
+    </section>
+
+    <footer>
+      <hr />
+      <h4>&copy; Duy Bình</h4>
+      <div>
+        <a href=""
+          ><i class="fa-brands fa-facebook-messenger messenger_button"></i
+        ></a>
+      </div>
+    </footer>
+
+    <button id="backToTop" title="Lên đầu trang">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="../back-to-top.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>

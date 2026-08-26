@@ -44,6 +44,7 @@ a {
 p {
   font-size: 19px;
 }
+.redhighlight,
 redhighlight {
   color: red;
 }
@@ -569,4 +570,77 @@ input:checked ~ img {
   position: absolute;
   left: 80px;
   top: 5px;
+}
+
+/* CSS grid */
+.container_grid {
+  display: grid;
+  /* display: inline-grid; */
+
+  /* grid-template-columns: auto; */
+  /* grid-template-row: auto; */
+  /* Cột 1, cột 2 */
+  /* grid-template-columns: 100px 50px 50px; */
+  grid-template-columns: repeat(5, 100px);
+  /* Dòng 1, dòng 2 */
+  grid-template-rows: repeat(3, 100px);
+  /* Dòng, cột */
+  gap: 5px 5px;
+  grid-auto-rows: 50px;
+
+  height: 100vh;
+
+  /* align-items: center; */
+  /* justify-items: center; */
+
+  /* Căn các khối item trong khối container */
+  /* align-content: end; */
+  /* justify-content: center; */
+}
+
+.box_grid {
+  background: yellow;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_grid_1, .box_grid_3, .box_grid_5 {
+  background: cyan;
+}
+
+.box_grid_1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.box_grid_2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.box_grid_3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.box_grid_4 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 3;
+  grid-column-end: 5;
+}
+
+.box_grid_5 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 5;
+  grid-column-end: 6;
 }
